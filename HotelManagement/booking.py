@@ -180,7 +180,6 @@ def updateAllTables(email,fromDate,toDate,room_list):
                                     VALUES        (:id,:s_date,:e_date,:room_no,:r_type);"""
                                     ,{'id':customer_id,'s_date':str(fromDate),'e_date':str(toDate),
                                     'room_no':room_id,'r_type':room_type})
-                                    # Nigga inserted id into customer_id (fixed)
         
         room_types = ["Deluxe","Luxury","Presidential"]
         allrooms = []
